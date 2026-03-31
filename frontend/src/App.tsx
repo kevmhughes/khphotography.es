@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
-/* import { Analytics } from "@vercel/analytics/react"; */
+import { Analytics } from "@vercel/analytics/react";
 
 import ScrollToTop from "./components/ScrollToTop";
 import { Toaster } from "react-hot-toast";
@@ -48,7 +48,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/success" element={<Success />} />
           </Routes>
-          {/* <Analytics /> */}
+          <Analytics />
         </BrowserRouter>
       </ProductProvider>
     </>
